@@ -1,4 +1,5 @@
 <?php
+
 // Read the variables sent via POST from our API
 $sessionId   = $_POST["sessionId"];
 $serviceCode = $_POST["serviceCode"];
@@ -33,3 +34,5 @@ if ($text == "") {
 // Echo the response back to the API
 header('Content-type: text/plain');
 echo $response;
+
+?>
